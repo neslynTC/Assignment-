@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --red-color: #c02332;
+}
+
+.main-page {
+    min-height: 100vh !important;
+    position: relative;
+}
+
+.min-width {
+    min-width: 344px !important;;
+}
+
+.margin-top {
+    margin-top: 10px !important;
+}
+
+.red-bg {
+    background-color: var(--red-color) !important;
+}
+
+.red-font {
+    color: #c02332
+}
+
+.white-font {
+    color: #fff !important;
+}
+
+body {
+    background-color: #f7f6f6;
+}
+
+.btn-round {
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.count {
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: default;
+    margin: 0px 10px;
+}
+
+.img-clickable {
+    cursor: pointer;
+}
+
+.weight-card-font-bold {
+    font-weight: 600;
+}
+
+.weight-card-font-size, .weight-card-font-bold  {
+    font-size: 12px;
+}
+
+.weight-card {
+    background-color: #f2f2f2;
+    display: inline-block;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}

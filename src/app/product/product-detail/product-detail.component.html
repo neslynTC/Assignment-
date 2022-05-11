@@ -1,0 +1,28 @@
+<div class="container-fluid margin-top">
+    <div class="container-fluid" *ngIf="product; else productNotFound">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <img src="{{product.img}}" width="100%" alt="{{product.title}} image">
+            </div>
+            <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-between">
+                <div>
+                    <h4 class="red-font">{{product.title}}</h4>
+                    <h4>₹{{product.price}}</h4>
+                    <p>{{product.description}}</p>
+                    <div class="weight-card">
+                        <span class="weight-card-font-bold weight-card-font-size">Weight:</span>
+                        <span class="weight-card-font-size">{{product.weight}}</span>
+                    </div>
+                    <p>{{product.shortDescription}}</p>
+                </div>
+                <div class="d-flex justify-content-start" >
+                    <app-cart-buttons [product]="product"></app-cart-buttons>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <ng-template #productNotFound>
+        Product Not Found
+    </ng-template>
+</div>

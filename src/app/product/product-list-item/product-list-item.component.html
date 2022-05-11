@@ -1,0 +1,20 @@
+<div class="card shadow p-3 mb-5 bg-body rounded">
+  <img src="{{product.img}}" class="card-img-top img-clickable" alt="{{product.title}} image" (click)="goToProductPage()">
+  <div class="card-body">
+    <p class="card-title">{{product.title}}</p>
+    <p>{{product.description}}</p>
+    <div class="weight-card">
+        <span class="weight-card-font-bold weight-card-font-size">Weight:</span>
+        <span class="weight-card-font-size">{{product.weight}}</span>
+    </div>
+    
+    <div class="row d-flex justify-content-between">
+      <div class="col-6 d-flex align-items-center cost">
+        ₹{{product.price}}
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+          <app-cart-buttons [product]="product"></app-cart-buttons>
+      </div>
+    </div>
+  </div>
+</div>
